@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="RestaurantPage.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Delicious Bites</div>
+            <ul>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#reservation">Reservation</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <h1>Welcome to Delicious Bites</h1>
+        <p>Experience the best flavors crafted with love.</p>
+        <a href="#menu" class="cta-button">Explore Our Menu</a>
+    </section>
+    
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="images/pasta.jpg" alt="Pasta">
+                <h3>Italian Pasta</h3>
+                <p>$12.99</p>
+                <p>Rich and creamy pasta with fresh ingredients.</p>
+                <button class="order-button">Order Now</button>
+            </div>
+            <div class="menu-item">
+                <img src="images/burger.jpg" alt="Burger">
+                <h3>Classic Burger</h3>
+                <p>$18.99</p>
+                <p>Juicy beef patty with fresh lettuce and cheese.</p>
+                <button class="order-button">Order Now</button>
+            </div>
+            <div class="menu-item">
+                <img src="images/salad.jpg" alt="Salad">
+                <h3>Garden Salad</h3>
+                <p>$21.99</p>
+                <p>Fresh and organic greens with a light dressing.</p>
+                <button class="order-button">Order Now</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <h2 align="center">Our Food Gallery</h2>
+        <div class="slideshow-container">
+                <img src="Images/gallery1.jpg" alt="Gallery Image 1" >
+                <img src="Images/gallery2.jpg" alt="Gallery Image 2">
+                <img src="Images/gallery3.jpg" alt="Gourmet Food">
+        </div>
+    </section>
+    
+    <section id="about">
+        <h2>About Us</h2>
+        <p>At Delicious Bites, we bring you authentic flavors made with the freshest ingredients. Our chefs are passionate about creating dishes that satisfy both taste and soul.</p>
+    </section>
+    
+    <section id="testimonials">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial">"Amazing food and great ambiance! Will visit again." - Sarah M.</div>
+        <div class="testimonial">"The best pasta I’ve ever had! Highly recommend." - Jason K.</div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    <section id="reservation">
+        <h2>Book a Table</h2>
+        <form>
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="date" required>
+            <input type="time" required>
+            <button type="submit">Reserve</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Delicious Bites. All rights reserved.</p>
+    </footer>
+</body>
+</html>

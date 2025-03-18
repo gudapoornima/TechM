@@ -1,0 +1,39 @@
+.container {
+    align-items: center;
+    background-color: brown;
+    padding: 10px;
+}
+form {
+    background-color: aquamarine;
+    align-items: center;
+    padding: 50px;
+    margin: auto;
+}
+button:hover {
+    background-color: #005f73; /* Darker blue on hover */
+    opacity: 0.8;
+}
+
+button:active {
+    transform: scale(0.95); /* Shrinks slightly when clicked */
+}
+button {
+    background-color: #008CBA; /* Blue background */
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding inside button */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px;
+    cursor: pointer; /* Pointer on hover */
+    transition: 0.3s;
+    align-items: center;
+    width: auto;
+    margin: 20px auto;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    text-align: center;
+    text-decoration: dashed;
+    background-color: bisque;
+}

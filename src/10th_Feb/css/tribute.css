@@ -1,0 +1,84 @@
+
+body {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/6/61/Ratan_Tata_photo.jpg');
+    background-image: url('C:\Users\katik\OneDrive\Desktop\java_full_stack\images.jpg');
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    background: rgb(188, 219, 216);
+    max-width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    color: rgb(4, 4, 143);
+    text-align: center;
+
+}
+.header {
+    text-align: center;
+}
+
+h1 {
+    background-color: #f4c481;
+    color: #29035c;
+}
+h2 {
+   color:#043766
+}
+
+img {
+    width: 30%;
+    border-radius: 10px;
+    margin: 10px 0;
+    align:center;
+}
+
+p, ul {
+    text-align: left;
+    margin: 10px auto;
+    width: 100%;
+}
+
+ul {
+    list-style-type: square;
+}
+
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+.row{
+    text-align: justify;
+    text-indent: 0%;
+    color: brown;
+    
+}
+.achievements{
+    text-align: left;
+    text-indent: 0%;
+    color: brown;
+    
+}
+details {
+    color:#4f07ac;
+}
+.footer {
+    text-align: justify;
+    text-indent: 0%;
+    color: rgb(24, 106, 73);
+    t
+}
+h4 {
+    color:#043766
+ }
