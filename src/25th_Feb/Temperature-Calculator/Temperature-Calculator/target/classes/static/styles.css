@@ -1,0 +1,71 @@
+/* General Page Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(120deg, #ff9a9e, #fad0c4);
+    color: #333;
+    text-align: center;
+    padding: 50px;
+}
+
+/* Container Styling */
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    width: 50%;
+}
+
+/* Form Inputs */
+.input-group {
+    margin: 15px 0;
+}
+
+input, select {
+    padding: 10px;
+    width: 80%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    background: #ff6f61;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background: #e64c3c;
+}
+
+/* Result Styling */
+.result-container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
+.result-text {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Back Button */
+.back-btn {
+    background: #3498db;
+}
+
+.back-btn:hover {
+    background: #217dbb;
+}
