@@ -1,0 +1,32 @@
+---
+my:
+- code:
+    id: 56
+    cost: 3.67
+    mdn:
+     type: big
+     obj: CLR
+     sale: Yes
+    str:
+     service:all
+...
+
+
+#predefined properties
+---
+server:
+  port: 8282
+...
+
+     
+     
+ #my.code.id=56
+ #my.code.cost=3.67
+ #my.code.mdn.type=big
+ #my.code.mdn.obj=CLR
+ #my.code.mdn.sale=Yes
+ #my.code.mdn.str.service=all
+ 
+ 
+    
+    
