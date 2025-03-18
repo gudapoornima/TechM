@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- Housing Loan Bean -->
+    <bean id="housingLoan" class="com.example.loan.HousingLoan">
+        <property name="amount" value="5000000"/>
+        <property name="interestRate" value="7.5"/>
+        <property name="tenure" value="20"/>
+    </bean>
+
+    <!-- Vehicle Loan Bean -->
+    <bean id="vehicleLoan" class="com.example.loan.VehicleLoan">
+        <property name="amount" value="1000000"/>  <!-- Ensure numeric values -->
+        <property name="interestRate" value="8.5"/>
+        <property name="tenure" value="5"/>
+    </bean>
+
+    <!-- Loan Service Bean (Setter Injection) -->
+    <bean id="loanService" class="com.example.loan.LoanService">
+        <property name="loanType" ref="housingLoan"/>  <!-- You can change this to "vehicleLoan" if you want to inject vehicle loan -->
+    </bean>
+
+</beans>

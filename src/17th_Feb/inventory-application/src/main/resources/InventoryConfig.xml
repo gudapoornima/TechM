@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- Define Item Beans -->
+    <bean id="item1" class="com.example.inventory.Item">
+        <constructor-arg value="Laptop"/>
+        <constructor-arg value="10"/>
+        <constructor-arg value="750.00"/>
+    </bean>
+
+    <bean id="item2" class="com.example.inventory.Item">
+        <constructor-arg value="Smartphone"/>
+        <constructor-arg value="50"/>
+        <constructor-arg value="500.00"/>
+    </bean>
+
+    <bean id="item3" class="com.example.inventory.Item">
+        <constructor-arg value="Headphones"/>
+        <constructor-arg value="30"/>
+        <constructor-arg value="150.00"/>
+    </bean>
+
+    <!-- Inventory Bean with constructor injection -->
+    <bean id="inventory" class="com.example.inventory.Inventory">
+        <constructor-arg>
+            <list>
+                <ref bean="item1"/>
+                <ref bean="item2"/>
+                <ref bean="item3"/>
+            </list>
+        </constructor-arg>
+    </bean>
+
+</beans>

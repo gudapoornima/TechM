@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- Bean definition for the SeasonalDiscountService -->
+    <bean id="seasonalService" class="com.example.shopping.SeasonalService"/>
+
+    <!-- Bean definition for the ShoppingCart -->
+    <bean id="shoppingCart" class="com.example.shopping.ShoppingCart">
+        <property name="discountService" ref="seasonalService"/> <!-- Interface Injection -->
+    </bean>
+
+</beans>
