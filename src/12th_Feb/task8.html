@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Guess the Number Game</title>
+</head>
+<body>
+    <h2>Guess the Number (1 to 10)</h2>
+    <button onclick="playGame()">Play Game</button>
+
+    <script>
+        function playGame() {
+            let randomNum = Math.floor(Math.random() * 10) + 1; // Random number between 1 and 10
+            let userGuess = parseInt(prompt("Guess a number between 1 and 10:"));
+
+            if (isNaN(userGuess) || userGuess < 1 || userGuess > 10) {
+                alert("Invalid input! Please enter a number between 1 and 10.");
+            } else if (userGuess === randomNum) {
+                alert("Good Work! You guessed it right.");
+            } else {
+                alert(`Not matched! The correct number was ${randomNum}.`);
+            }
+        }
+    </script>
+</body>
+</html>
