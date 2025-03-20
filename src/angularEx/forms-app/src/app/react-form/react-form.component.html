@@ -1,0 +1,50 @@
+<h2>Reactive Form Module</h2>
+<div>
+    <form [formGroup]="loginForm" (ngSubmit)="registerUser()">
+        <table style="width:60%;" cellpadding="5" cellspacing="5">
+            <tr>
+                <td style="width:40%;">
+                    <label for="username">User Name</label>
+                </td>
+                <td style="width:60%;">
+                    <input type="text" name="username" id="username" [formControl]="username">
+                    <div *ngIf="username.invalid && username.touched" class="error">
+                        <div *ngIf="username.hasError('minlength')">
+                            Username cannot be shorter than 5 characters.
+                        </div>
+                        <div *ngIf="username.hasError('required')">
+                            Username is required.
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td style="width:40%;">
+                    <label for="password">Password</label>
+                </td>
+                <td style="width:60%;">
+                    <input type="password" name="password" id="password" [formControl]="password">
+                    <div *ngIf="password.invalid && password.touched" class="error">
+                        <div *ngIf="password.hasError('required')">
+                            The password is required.
+                        </div>
+                        <div *ngIf="password.hasError('hasSpecialCharacter')">
+                            Your password must contain at least one special character (! @ # $ ^ &).
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td style="width:40%;"></td>
+                <td style="width:60%;">
+                    <button class="btn btn-success" [disabled]="!loginForm.valid">Log In</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <div *ngIf="showMessage">
+        <p>react-form is working!</p>
+        <h3>Thank you, {{formData.username}}, for registering!</h3>
+    </div>
+</div>
+
